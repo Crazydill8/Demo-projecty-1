@@ -12,9 +12,9 @@ public class startGame {
 		System.out.println("but unfortunately couldn't. I would like to learn more about using them");
 		System.out.println("---------------------------------------------------------------------------------------------------------");
 		System.out.println("You wake up in a dark dungeon; Looking behind you there is only");
-		System.out.println("a wall, and so you must go forward. You find a fork where the path splits into 3 directions");
+		System.out.println("a wall, and so you must go forward. You find a fork where the path splits into 2 directions");
 		System.out.println("");
-		System.out.println("Choose a direction, left, straight, or to the right");
+		System.out.println("Choose a direction, left right");
 		
 		String chosenDirection = input.nextLine();
 		
@@ -22,10 +22,6 @@ public class startGame {
 		//Path will change based on input
 		if(chosenDirection.equals("Left") || chosenDirection.equals("left") || chosenDirection.equals("Go left") || chosenDirection.equals("go left")) {
 			direction.leftPath();
-		}
-		
-		if(chosenDirection.equals("straight") || chosenDirection.equals("Straight") || chosenDirection.equals("Go straight") || chosenDirection.equals("go straight")) {
-			direction.straightPath();
 		}
 		
 		if(chosenDirection.equals("Right") || chosenDirection.equals("right") || chosenDirection.equals("Go right") || chosenDirection.equals("go right")) {
